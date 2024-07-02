@@ -1,4 +1,4 @@
-You must have installed Composer and Node.js.
+ You must have installed Composer and Node.js.
 
 1. Create a plugin folder in the plugins folder (for example, gutenberg-blocks).
 2. You have to clone the repo into the created folder. 

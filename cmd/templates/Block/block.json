@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "{{slug}}/{{block}}",
+    "version": "{{version}}",
+    "title": "{{title}}",
+    "category": "embed",
+    "icon": "admin-generic",
+    "description": "{{description}}",
+    "attributes": {
+    "sampleAttribute": {
+            "type": "string",
+            "default": "The Sample data of the sample attribute"
+        }
+    },
+    "supports": {
+    "multiple": false,
+    "html": false,
+    "align": [ "wide", "full" ],
+    "alignWide": true,
+        "spacing": {
+	        "margin": [ "top", "bottom" ],
+	        "padding": [ "top", "bottom", "left", "right" ]
+        }
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./script.css",
+    "script": "file:./script.js",
+    "render": "file:./render.php"
+}

@@ -8,9 +8,6 @@
 final class CmdCreation {
 	private array $templates = [];
 	private array $files = [];
-	private array $remove = [];
-
-	private array $copy = [];
 
 	private static self|null $instance = null;
 

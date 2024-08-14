@@ -66,8 +66,12 @@ final class CmdCreation {
 		$this->copyTemplatesCalculateFiles('Plugin');
 		$this->println("\n", true);
 		@unlink(dirname(__DIR__) . $this->updatePath('/composer.lock'));
-		shell_exec("composer install");
+                shell_exec("composer install");
+                shell_exec("npm remove @wordpress/scripts");
+                shell_exec("npm remove @wordpress/block-editor @wordpress/blocks @wordpress/components @wordpress/core-data @wordpress/data @wordpress/i18n");
 		shell_exec("npm install");
+                shell_exec("npm add @wordpress/scripts -D");
+                shell_exec("npm add @wordpress/block-editor @wordpress/blocks @wordpress/components @wordpress/core-data @wordpress/data @wordpress/i18n @wordpress/scripts");
 	}
 
 	private function createBlock(): void

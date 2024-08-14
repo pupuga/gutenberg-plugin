@@ -19,8 +19,8 @@
     "align": [ "wide", "full" ],
     "alignWide": true,
         "spacing": {
-	        "margin": [ "top", "bottom" ],
-	        "padding": [ "top", "bottom", "left", "right" ]
+            "margin": [ "top", "bottom" ],
+            "padding": [ "top", "bottom", "left", "right" ]
         }
     },
     "editorScript": "file:./index.js",
